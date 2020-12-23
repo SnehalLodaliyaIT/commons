@@ -95,7 +95,7 @@ export class MockoonServer extends (EventEmitter as new () => TypedEmitter<
     server.use(this.errorHandler);
 
     // handle server errors
-    this.serverInstance.on('error', (error) => {
+    this.serverInstance.on('error', (error: any) => {
       let errorCode = ServerErrorCodes.UNKNOWN_SERVER_ERROR;
 
       if (error.code === 'EADDRINUSE') {

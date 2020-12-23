@@ -1,4 +1,5 @@
 import { Header, Route } from './route.model';
+import { Resource } from './resource.model';
 
 export type Environment = {
   uuid: string;
@@ -8,6 +9,7 @@ export type Environment = {
   endpointPrefix: string;
   latency: number;
   routes: Route[];
+  resources: Resource[];
   proxyMode: boolean;
   proxyHost: string;
   proxyReqHeaders: Header[];
