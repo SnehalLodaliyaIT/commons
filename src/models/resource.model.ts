@@ -2,7 +2,9 @@ import {  Route } from './route.model';
 
 export type Resource = {
   uuid: string;
-  schema:{};
+  name:string;
+  noOfColumns:number,
+  resourceColumns:{};
   routes: Route[];
 };
 
